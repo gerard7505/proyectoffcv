@@ -1,0 +1,99 @@
+
+.soporte-wrapper {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #f9f9f9;
+  margin-top: 0;
+}
+
+.soporte-title {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  margin-top: 0;
+  font-weight: bold;
+  background-color: #1c1c1c;
+}
+
+.pregunta-box {
+  background-color: #555;
+  border: 1px solid #666;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.pregunta-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pregunta-box h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.pregunta-box p {
+  color: #f1f1f1;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.soporte-buscador {
+  display: block;
+  width: 96%; 
+  margin: 0 auto 25px auto;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  transition: border-color 0.3s ease;
+}
+
+.soporte-buscador:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.soporte-buscador::placeholder {
+  color: #aaa;
+}
+
+/* ===== Responsive para móviles (hasta 768px) ===== */
+@media (max-width: 768px) {
+  .soporte-wrapper {
+    padding: 10px;
+  }
+
+  .soporte-title {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+
+  .pregunta-box {
+    padding: 15px;
+  }
+
+  .pregunta-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .pregunta-box p {
+    font-size: 1rem;
+  }
+
+  .soporte-buscador {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+}

@@ -1,0 +1,25 @@
+api_platform:
+    title: Hello API Platform # Título de la API.
+    version: 1.0.0 # Versión de la API.
+    
+    formats: # Formatos que API Platform aceptará para las respuestas.
+        jsonld: ['application/ld+json'] # Establece JSON-LD como formato principal.
+        json: ['application/json'] # Si quieres también JSON, puedes agregarlo.
+        xml: ['application/xml'] # Puedes agregar XML si es necesario.
+
+    docs_formats: # Formatos en los que se generarán los documentos de la API.
+        jsonld: ['application/ld+json'] 
+        jsonopenapi: ['application/vnd.openapi+json'] # Para OpenAPI 3.0.
+        html: ['text/html'] # Para mostrar la documentación en HTML.
+
+    defaults: # Configuraciones predeterminadas para la API.
+        stateless: true # Configuración para indicar que la API es stateless, sin gestión de sesión.
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin'] # Varia por cabeceras especificadas para el cache.
+        extra_properties:
+            standard_put: true # Permite el uso estándar de PUT.
+            rfc_7807_compliant_errors: true # Hacer que los errores cumplan con el estándar RFC 7807 (problemas detallados).
+
+    keep_legacy_inflector: false # Deshabilita el inflector de legados de Symfony.
+    use_symfony_listeners: true # Activa el uso de los listeners de Symfony.
+

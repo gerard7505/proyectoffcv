@@ -1,0 +1,39 @@
+/* Contenedor general */
+.historia-wrapper {
+  max-width: 900px;
+  margin: 20px auto;
+  
+  font-family: Arial, sans-serif;
+  color: #f9f9f9;
+}
+
+/* Título principal separado */
+.historia-title {
+  font-size: 1.8rem;
+  color: #ffffff;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #333;
+}
+
+/* Contenedor de contenido */
+.historia {
+  background-color: #444;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Párrafos */
+.historia p {
+  font-size: 1.1rem;
+  color: #f9f9f9;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}

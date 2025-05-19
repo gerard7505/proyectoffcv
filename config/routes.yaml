@@ -1,0 +1,97 @@
+# config/routes.yaml
+
+controllers:
+    resource: ../src/Controller
+    type: attribute
+
+# Rutas para la API de jugadores
+jugador_list:
+    path: /api/jugadores
+    controller: App\Controller\JugadorController::createJugador
+    methods: [POST]
+
+jugador_show:
+    path: /api/jugadores/{id}
+    controller: App\Controller\JugadorController::getJugador
+    methods: [GET]
+
+# Rutas para clubs
+club_list:
+    path: /api/clubs
+    controller: App\Controller\ClubController::createClub
+    methods: [POST]
+
+club_show:
+    path: /api/clubs/email/{email}
+    controller: App\Controller\ClubController::getClubByEmail
+    methods: [GET]
+
+login_club:
+    path: /api/clubs/login
+    controller: App\Controller\ClubController::loginClub
+    methods: [POST]
+
+login_admin:
+    path: /api/admins/login
+    controller: App\Controller\AdminController::loginAdmin
+    methods: [POST]
+
+club_update_by_email:
+    path: /api/clubs/email/{email}
+    controller: App\Controller\ClubController::updateClubByEmail
+    methods: [PUT]
+
+# Rutas para las ofertas
+crear_oferta:
+    path: /api/ofertas
+    controller: App\Controller\OfertaController::crearOferta
+    methods: [POST]
+
+listar_ofertas:
+    path: /api/ofertas
+    controller: App\Controller\OfertaController::listarOfertas
+    methods: [GET]
+
+ver_oferta:
+    path: /api/ofertas/{id}
+    controller: App\Controller\OfertaController::verOferta
+    methods: [GET]
+    requirements:
+        id: '\d+'
+
+eliminar_oferta:
+    path: /api/ofertas/{id}
+    controller: App\Controller\OfertaController::eliminarOferta
+    methods: [DELETE]
+    requirements:
+        id: '\d+'
+
+agregar_oferta_favorita:
+    path: /api/ofertas/favorito
+    controller: App\Controller\OfertaController::agregarFavorito
+    methods: [POST]
+
+quitar_oferta_favorita:
+    path: /api/ofertas/favorito
+    controller: App\Controller\OfertaController::quitarFavorito
+    methods: [DELETE]
+
+ofertas_por_club:
+    path: /api/ofertas/club/{clubId}
+    controller: App\Controller\OfertaController::ofertasPorClub
+    methods: [GET]
+    requirements:
+        clubId: '\d+'
+
+obtener_categorias:
+    path: /api/ofertas/categorias
+    controller: App\Controller\OfertaController::obtenerCategorias
+    methods: [GET]
+
+favoritos_por_jugador:
+    path: /api/ofertas/favoritos/{jugadorId}
+    controller: App\Controller\OfertaController::favoritosPorJugador
+    methods: [GET]
+    requirements:
+        jugadorId: '\d+'
+

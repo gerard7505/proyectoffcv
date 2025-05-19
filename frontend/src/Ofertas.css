@@ -1,0 +1,210 @@
+
+.ofertas-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ofertas-container h1 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 0;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+
+.ofertas-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ofertas-container li {
+  background-color: #222;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ofertas-container li:hover {
+  background-color: #444;
+}
+
+.ofertas-container h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.ofertas-container .details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.ofertas-container .details p {
+  margin: 10px 0;
+}
+
+.ofertas-container .details strong {
+  font-weight: bold;
+}
+
+.ofertas-container .close {
+  background-color: #0056b3;
+  color: rgb(255, 255, 255);
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.ofertas-container .close:hover {
+  background-color: #0056b3;
+}
+
+/* Botón de eliminar (solo admin) */
+.ofertas-container .delete {
+  background-color: #d30707;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ofertas-container .delete:hover {
+  background-color: #c2185b;
+}
+
+.ofertas-container .error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ofertas-container .no-ofertas {
+  text-align: center;
+  font-style: italic;
+}
+
+.buscador, .filtro-categoria {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.buscador input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  transition: border-color 0.3s ease;
+}
+
+.buscador input:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.filtro-categoria select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  width: 100%;
+  max-width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+.filtro-categoria select:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.ofertas-container .buscador, .ofertas-container .filtro-categoria {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== Responsive para móviles (hasta 768px) ===== */
+@media (max-width: 768px) {
+  .ofertas-container {
+    padding: 10px;
+  }
+
+  .ofertas-container h1 {
+    font-size: 1.4rem;
+    padding: 8px 10px;
+  }
+
+  .ofertas-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .ofertas-container li {
+    padding: 12px;
+  }
+
+  .ofertas-container .details {
+    padding: 15px;
+  }
+
+  .buscador, .filtro-categoria {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .buscador input,
+  .filtro-categoria select {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .ofertas-container .close,
+  .ofertas-container .delete {
+    width: 100%;
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+  }
+
+  .ofertas-container .close {
+    margin-bottom: 10px;
+  }
+}
+
+.estrella-favorito {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.estrella-favorito:hover {
+  color: #ffcc00;
+  transform: scale(1.2);
+}
+
+.estrella-favorito.activo {
+  color: #ffcc00;
+}

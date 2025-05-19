@@ -1,0 +1,306 @@
+/* Noticias.css */
+
+/* === Global === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+/* === Contenedores principales === */
+.noticias-wrapper {
+  margin-top: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === Títulos === */
+.noticias-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.ofertas-destacadas-title,
+.captacion-ffcv-title {
+  font-size: 1.4rem;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  margin-top: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* === Imagen FFCV === */
+.ffcv-image-container {
+  margin-bottom: 20px;
+}
+
+.ffcv-image {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === Contenido informativo === */
+.noticias-container {
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.noticias-container p {
+  font-size: 1.1rem;
+  color: #f9f9f9;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.noticias-container a {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+/* === Texto adicional === */
+.info-text {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.extra-info {
+  background-color: #222;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  color: #f9f9f9;
+  font-size: 1.1rem;
+}
+
+/* === Carrusel === */
+.noticias-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 20px;
+}
+
+.carousel-arrow {
+  font-size: 2rem;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 10; 
+}
+
+.carousel-arrow:hover {
+  color: #0056b3;
+}
+
+/* === Noticias individuales (fondos) === */
+.noticia-castellon,
+.noticia-villarreal,
+.noticia-valencia {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 750px;
+  height: 500px;
+  margin: 20px auto;
+}
+
+.noticia-castellon {
+  background-image: url('https://pbs.twimg.com/media/F6FJj2RWYAAvAHh.jpg:large');
+}
+
+.noticia-villarreal {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/027/011/256/non_2x/villarreal-cf-club-symbol-logo-white-la-liga-spain-football-abstract-design-illustration-with-black-background-free-vector.jpg');
+}
+
+.noticia-valencia {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/027/011/591/non_2x/valencia-club-symbol-logo-white-la-liga-spain-football-abstract-design-illustration-with-black-background-free-vector.jpg');
+}
+
+.noticia-villarreal::before,
+.noticia-valencia::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  z-index: 0;
+}
+
+.noticia-villarreal > *,
+.noticia-valencia > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Captación === */
+.noticia-captacion {
+  background-color: #000000;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.noticia-captacion h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.noticia-captacion p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.noticia-captacion ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.noticia-captacion a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.noticia-captacion a:hover {
+  color: #005fa3;
+}
+
+/* === Enlaces de noticias === */
+.noticia-item a {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.noticia-item a:hover {
+  color: #000000;
+}
+
+/* === Botón "leer más" === */
+.leer-mas {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1em;
+  color: #0077cc;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.leer-mas:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+/* === Imágenes de noticia === */
+.imagenes-noticia {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.imagen-noticia {
+  width: 45%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .noticias-wrapper {
+    padding: 0 15px;
+  }
+
+  .noticias-title,
+  .ofertas-destacadas-title,
+  .captacion-ffcv-title {
+    font-size: 1.5rem;
+    padding: 8px 10px;
+  }
+
+  .noticias-container {
+    padding: 20px;
+  }
+
+  .noticia-castellon,
+  .noticia-valencia,
+  .noticia-villarreal {
+    height: auto;
+    padding: 20px;
+  }
+
+  .imagenes-noticia {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .imagen-noticia {
+    width: 100%;
+  }
+
+  .carousel-arrow {
+    font-size: 1.5rem;
+    z-index: 10; 
+  }
+
+  .ffcv-image {
+    width: 100%;
+  }
+
+  .noticias-container p,
+  .noticia-captacion p {
+    font-size: 1rem;
+  }
+
+  .noticia-captacion h2 {
+    font-size: 1.3rem;
+  }
+}
+

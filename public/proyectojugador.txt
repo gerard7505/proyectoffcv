@@ -1,0 +1,50 @@
+﻿FFCV CONNECT 
+
+Currículum Deportivo - Ficha de Jugador
+Información Personal
+    1. Nombre completo: ______________________________________
+    2. DNI: _______________________________________________
+    3. Fecha de nacimiento: __________________________________
+    4. Edad: _______________________________________________
+    5. Nacionalidad: _________________________________________
+    6. Teléfono de contacto: __________________________________
+    7. Dirección completa: ___________________________________
+    8. Lugar de nacimiento: ___________________________________
+    9. Correo electrónico: ___________________________________
+    10. Foto reciente :
+
+
+
+
+
+
+
+
+Información Deportiva
+    1. Posición en el campo: __________________________________
+    2. Club actual: __________________________________________
+(Nombre del club y liga en la que compite actualmente)
+    3. Clubs anteriores:
+(Por favor, indica todos los clubes en los que has jugado anteriormente, junto con la liga en la que competían y los años de las temporadas correspondientes.)
+       a) Club 1: ___________________________________________
+Liga: _____________________________________________
+Temporada: _______________________________________
+       b) Club 2: ___________________________________________
+Liga: _____________________________________________
+Temporada: _______________________________________
+       c) Club 3: ___________________________________________
+Liga: _____________________________________________
+Temporada: _______________________________________
+       (Continúa con más clubes si es necesario)
+    4. Experiencia internacional (si aplica):
+a) Países en los que has jugado: _______________________
+(Especifica si has jugado en ligas internacionales o representado a tu selección)
+       b) Selección nacional: _______________________________
+(Si has formado parte de alguna selección nacional, ¿en qué categoría y cuántos partidos has jugado?)
+    5. Lesiones o historial médico relevante: _______________________
+(Por favor, especifica cualquier lesión importante o problema físico que pueda ser relevante para el club al momento de evaluarte.)
+    6. Habilidades y características futbolísticas: _______________________
+(Describe brevemente cuáles son tus puntos fuertes como jugador: velocidad, visión de juego, capacidad de pase, liderazgo, etc.)
+    7. Disponibilidad para entrenamientos y partidos: _______________________
+(Indica tu disponibilidad, si tienes restricciones, o si estás comprometido completamente con el equipo.)
+

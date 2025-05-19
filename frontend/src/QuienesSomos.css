@@ -1,0 +1,80 @@
+/* Contenedor general */
+.quienes-somos-wrapper {
+  max-width: 900px;
+  margin: 20px auto;
+  
+  font-family: Arial, sans-serif;
+  color: #f9f9f9;
+}
+
+/* Título principal separado */
+.quienes-somos-title {
+  font-size: 1.8rem;
+  color: #ffffff;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #333;
+}
+
+/* Contenedor de contenido */
+.quienes-somos {
+  background-color: #444;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulos */
+.quienes-somos h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  
+  padding-left: 10px;
+}
+
+/* Párrafos */
+.quienes-somos p {
+  font-size: 1.1rem;
+  color: #f9f9f9;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Lista de objetivos */
+.quienes-somos ul {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+.quienes-somos li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #f9f9f9;
+}
+
+/* Contenedor para las imágenes en fila */
+.qs-img-row {
+display: flex;
+justify-content: space-between;
+gap: 15px;
+margin-top: 20px;
+flex-wrap: wrap;
+}
+
+/* Estilo de cada imagen individual */
+.qs-img {
+width: 48%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+object-fit: cover;
+}

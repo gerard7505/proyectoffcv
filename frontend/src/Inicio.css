@@ -1,0 +1,363 @@
+/* ============ General ============ */
+
+.inicio-wrapper {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #f9f9f9;
+}
+
+.informacion-container {
+  background-color: #444;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.informacion-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  margin-top: 30px;
+}
+
+.informacion-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #050505;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.download-button:hover {
+  background-color: #333;
+}
+
+.document-link {
+  color: #333;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.document-link:hover {
+  color: #333;
+}
+
+/* ============ Banner ============ */
+
+.banner-container {
+  width: 80%;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.banner-imagen {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+.titulo-principal {
+  font-size: 1.8rem;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+
+/* ============ Slider ============ */
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.club-card {
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.escudo-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.club-nombre {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.slider-btn {
+  font-size: 2rem;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.slider-btn:hover {
+  color: #0056b3;
+  transform: scale(1.2);
+}
+
+.subtitulo-clubes {
+  font-size: 1.4rem;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/* ============ Captación ============ */
+
+.informacion-captacion {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.leer-mas-link {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.leer-mas-link:hover {
+  text-decoration: underline;
+}
+
+/* ============ Botones ============ */
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background-color: #000000;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.leer-mas-button {
+  background-color: #4CAF50;
+}
+
+.leer-mas-button:hover {
+  background-color: #45a049;
+}
+
+.volver-inicio-button {
+  background-color: #ff6347;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.volver-inicio-button:hover {
+  background-color: #e55347;
+}
+
+/* ============ Responsive - Tablets ============ */
+
+@media (max-width: 768px) {
+  .inicio-wrapper {
+    margin: 15px;
+    max-width: 95%;
+  }
+
+  .informacion-container {
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .informacion-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .informacion-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .download-button,
+  .document-link {
+    font-size: 1rem;
+  }
+
+  .banner-container {
+    width: 90%;
+    margin-bottom: 15px;
+    max-height: 300px;
+  }
+
+  .banner-imagen {
+    height: 200px;
+  }
+
+  .titulo-principal {
+    font-size: 1.6rem;
+    padding: 8px 15px;
+  }
+
+  .slider-container {
+    margin: 20px auto;
+    padding: 5px;
+  }
+
+  .club-card {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  .club-nombre {
+    font-size: 1rem;
+  }
+
+  .slider-btn {
+    font-size: 1.5rem;
+  }
+
+  .subtitulo-clubes {
+    font-size: 1.2rem;
+  }
+
+  .informacion-captacion {
+    padding: 12px;
+  }
+
+  .leer-mas-button,
+  .volver-inicio-button,
+  button {
+    font-size: 1rem;
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* ============ Responsive - Phones ============ */
+
+@media (max-width: 480px) {
+  .inicio-wrapper {
+    margin: 10px;
+  }
+
+  .informacion-container {
+    padding: 15px;
+  }
+
+  .informacion-title {
+    font-size: 1.5rem;
+  }
+
+  .informacion-container p {
+    font-size: 0.95rem;
+  }
+
+  .download-button {
+    font-size: 1rem;
+  }
+
+  .document-link {
+    font-size: 0.95rem;
+  }
+
+  .banner-container {
+    width: 100%;
+    margin-bottom: 10px;
+    max-height: 250px;
+  }
+
+  .banner-imagen {
+    height: 180px;
+  }
+
+  .titulo-principal {
+    font-size: 1.4rem;
+    padding: 6px 12px;
+  }
+
+  .slider-container {
+    margin: 15px auto;
+  }
+
+  .club-card {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .slider-btn {
+    font-size: 1.4rem;
+  }
+
+  .subtitulo-clubes {
+    font-size: 1rem;
+  }
+
+  .informacion-captacion {
+    padding: 10px;
+  }
+
+  .informacion-title {
+    font-size: 1.1rem;
+  }
+
+  .leer-mas-button,
+  .volver-inicio-button,
+  button {
+    font-size: 0.95rem;
+  }
+}
